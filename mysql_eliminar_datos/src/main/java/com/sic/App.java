@@ -7,7 +7,7 @@ public static void main(String[] args) {
             //Llamada a la libreria mysql conector
             Class.forName("com.mysql.jdbc.Driver");
             //Nueva conexión                           conexión a localhost |   nombre de bd | ususario mysql | contraseña  
-            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/datos", "usuariotabla", "pass1234");
+            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/datos", "diana", "1234");
             //Nuevo statement para eliminar datos
             PreparedStatement st = con.prepareStatement("DELETE FROM alumnos WHERE id = 0;");
             //Ejecutar statement
